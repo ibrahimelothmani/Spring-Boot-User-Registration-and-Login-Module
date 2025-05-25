@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.List;
+
 @Controller
 @AllArgsConstructor
 public class AuthController {
@@ -55,6 +57,14 @@ public class AuthController {
 
         userService.saveUser(userDto);
         return "redirect:/register?success";
+    }
+
+    // handler method to handle list of users
+    @GetMapping("/users")
+    public String users(Model model){
+        List<UserDto> users = userService.findAllUsers();
+        model.addAttribute("users", users);
+        return "users";
     }
 
 }
