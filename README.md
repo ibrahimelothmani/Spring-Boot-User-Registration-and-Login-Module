@@ -77,7 +77,7 @@ The application features a modern, responsive design with:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 👨‍💻 Author
-Ibrahim - Your GitHub Profile
+Ibrahim - https://ibrahimelothmani.vercel.app/
 
 ## 🙏 Acknowledgments
 - Spring Boot team for the excellent framework
